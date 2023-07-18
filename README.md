@@ -1,4 +1,18 @@
-> The example repository is maintained from a [monorepo](https://github.com/nextauthjs/next-auth/tree/main/apps/examples/nextjs). Pull Requests should be opened against [`nextauthjs/next-auth`](https://github.com/nextauthjs/next-auth).
+# next-auth-example-knex
+
+## Overview
+
+`next-auth-example-knex` is a modification of the `next-auth-example` sample project provided by NextAuth.js that uses the [Knex](https://knexjs.org/) library for database access.
+
+In addition to using Knex, it has e-mail-based login enabled using [Nodemailer](https://github.com/nodemailer/nodemailer). NextAuth.js requires a persistent database storage to be configured to enable e-mail-based authentication, so enabling database backend goes hand-in-hand with enabling e-mail authentication in NextAuth.js.
+
+I have tested this sample project with SQLite 3 and e-mail and Google authentication methods enabled, and it appears to work, but it hasn't been extensively tested. I make this code publicly available in hope that it might save another person looking to make NextAuth.js work with Knex a bit of time.
+
+The NextAuth.js adapter for Knex is implemented in `knex-adapter/index.ts`.
+
+I do not intend to actively maintain this code.
+
+## Original next-auth-example project README
 
 <p align="center">
    <br/>

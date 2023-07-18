@@ -1,11 +1,6 @@
 {
   "private": true,
-  "description": "An example project for NextAuth.js with Next.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "https://next-auth-example.vercel.app",
+  "description": "An example project for NextAuth.js and Next.js with e-mail login and Knex adapter",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -15,17 +10,26 @@
   "contributors": [
     "Balázs Orbán <info@balazsorban.com>",
     "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>"
+    "Lluis Agusti <hi@llu.lu>",
+    "Hoon Choi <hoon@fastmail.com>"
   ],
   "dependencies": {
-    "next": "latest",
-    "next-auth": "latest",
+    "knex": "^2.4.2",
+    "next": "^13.4.5",
+    "next-auth": "^4.22.1",
+    "nodemailer": "^6.9.3",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "pg-native": "^3.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/node": "^18.16.2",
     "@types/react": "^18.2.0",
+    "sqlite3": "^5.1.6",
+    "sucrase": "^3.32.0",
     "typescript": "^5.0.4"
   }
 }
